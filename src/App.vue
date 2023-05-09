@@ -1,6 +1,6 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <img alt="Vue logo" :src="$mjb('logo')">
+  <HelloWorld :msg="`Welcome to Your ${$mjb('text.title')} App`"/>
 </template>
 
 <script>
